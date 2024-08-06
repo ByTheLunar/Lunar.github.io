@@ -98,7 +98,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
         <span class="listTitle">这是文章标题～</span>
     </div>
     <div class="listLabels">
-        
+        <span class="Label" style="background-color:#006b75">1</span>
         <span class="Label LabelName" style="background-color:#0075ca"><object><a style="color:#fff" href="tag.html#documentation">documentation</a></object></span><span class="Label LabelName" style="background-color:#7057ff"><object><a style="color:#fff" href="tag.html#good first issue">good first issue</a></object></span>
         <span class="Label LabelTime" style="background-color:#bc4c00">2024-08-07</span>
     </div>
@@ -114,8 +114,8 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 var now=new Date();
 document.getElementById("copyrightYear").innerHTML=now.getFullYear();
 
-if(""!=""){
-    var startSite=new Date("");
+if("08/07/2024"!=""){
+    var startSite=new Date("08/07/2024");
     var diff=now.getTime()-startSite.getTime();
     var diffDay=Math.floor(diff/(1000*60*60*24));
     document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
