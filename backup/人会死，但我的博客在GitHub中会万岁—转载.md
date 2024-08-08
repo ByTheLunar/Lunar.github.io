@@ -1,4 +1,4 @@
->###转载自Gmeek作者博客
+> ### 转载自Gmeek作者博客
 > https://blog.meekdai.com/post/ren-hui-si-，-dan-wo-de-bo-ke-zai-GitHub-zhong-hui-wan-sui.html
 >
 > 当人类面对时间的无情流逝，我们总是渴望留下一些痕迹，一些思想，一些记忆。博客，作为一种数字化的表达方式，成为了我们记录自己、分享见解、传承知识的平台。然而，时间也在不断地削弱这些数字化的痕迹，让它们逐渐消失在虚拟的海洋中。
