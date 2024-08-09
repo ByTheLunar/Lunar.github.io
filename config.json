@@ -1,8 +1,9 @@
 {
     "title":"Lunar的suisei.top",
+    "displayTitle":"Lunar'blog",
     "subTitle":"创建于2024年8月7日凌晨3点15分",
     "avatarUrl":"https://github.githubassets.com/favicons/favicon.svg",
-    "email":"Lunar@suisei.top",
+    "email":"blog.suisei.top",
     "GMEEK_VERSION":"last",
     "needComment":1,
     "homeUrl":"https://blog.suisei.top",
@@ -10,6 +11,7 @@
     "themeMode":"fix",
     "dayTheme":"dark",
     "nightTheme":"dark-blue",
+    "showPostSource":1,
     "i18n":"CN",
     "iconList":{"music":"M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13Z"},
     "exlink":{"music":"https://baidu.com"},
