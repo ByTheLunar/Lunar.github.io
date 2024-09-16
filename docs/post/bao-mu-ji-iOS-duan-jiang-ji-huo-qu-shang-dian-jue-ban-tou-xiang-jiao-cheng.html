@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark_colorblind" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    <script src='https://blog.meekdai.com/Gmeek/plugins/GmeekBSZ.js'></script>
+    <link rel="icon" href="https://github.com/ByTheLunar/Lunar.github.io/blob/main/static/images/avatar.jpg"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="本教程详细教学了如何备份降级Phigros以及获取旧版商店头像方法，涉及到的一切文件均会在文末提供相关链接
+
+在查看教程前，请先确保：
+1.你有一台iPhone/iPad(本教程使用iPad mini4-iPadOS15.7.1)
+2.上述设备已越狱或安装巨魔或你掌握自签技术(即拥有证书及签名工具)
+3.上述设备上安装了Phigros(制作教程时最新版为3.9.1)
+
+##0.5备份数据(该教程失败率较低，对自己操作自信的可忽略）
+
+* 方法一：Phi自带的TapTap云存档备份
+* 方法二：越狱或巨魔使用Apps manager备份
+* 方法三：使用爱思助手连接设备备份
+![378C3DA3-AAA2-4F06-BB8A-302369608E83](https://github.com/user-attachments/assets/f7a4302e-4ff8-4930-889a-cb6cd5b24948)
+![5FB92118-B0F2-4C93-8826-1A519BA674D2](https://github.com/user-attachments/assets/a90fceff-cc81-448d-b014-2f54136c0572)
+
+##1.0降级Phigros(将Phigros降级到1.4.3版本)
+
+我会在文末提供Phigros1.4.3.ipa及其他文件，至于为什么非得是1.4.3呢，会在1.5步中解释
+
+* 方法一（需要设备上已经有自签软件及证书或电脑来使用自签软件）
+
+首先我们需要卸载新版Phigros，防止安装旧版Phigros时出现冲突
+打开 设置 点击通用/iPad(iPhone)存储空间
+![FAA12E2E-548F-4812-8ED3-AA5154694DD8](https://github.com/user-attachments/assets/ee67938c-30ab-404e-b40a-7578ca4ce037)
+然后等待应用列表加载(可能会花费较长时间，请耐心等待)，找到Phigros，点击它，然后点击“卸载App”，注意⚠️！是“卸载App”不是“删除App”！
+![084D3EA9-C893-4252-AA7B-98F098E9D3F9](https://github.com/user-attachments/assets/ee160e93-b03e-4996-9ae6-4a88c3e9ff2f)
+![94447B79-4F8A-4DA7-83D7-3BFAB2E527B1](https://github.com/user-attachments/assets/b287d8b6-b32b-49ca-9052-963adb1ec6bb)
+卸载完毕之后打开你所使用的签名软件(建议用爱思助手(pc)，轻松签(iOS))
+爱思助手安装ipa可自行查询，较为简单
+以轻松签为例，导入Phigros1.4.3.ipa，签名进行安装（证书问题自行解决）请确保ipa签名安装时的应用标识符(Bundle Identifier)为games.Pigeon.Phigros！
+![45A28CA7-E3BE-424B-B4DB-E15448E36AF7](https://github.com/user-attachments/assets/ebbbaba8-33f1-42c9-a930-561675b04c48)
+* 方法二（巨魔用户可用）
+
+A方案.
+使用Trollstore覆盖安装Phigros1.4.3(前提即为标识符相同)
+![9A1A6C61-F0E4-434D-A6C4-4B1FB9BAD49D](https://github.com/user-attachments/assets/bbf56f52-f748-4e50-b934-07a9cb55fe89)
+选择Force Installation(覆盖安装)
+![B4691A59-A879-46B4-957E-994F843885E7](https://github.com/user-attachments/assets/08538140-3449-46c9-8c28-d2dd1290cb36)
+B方案.
+使用Trollstore安装netskao的DowngradeApp(不推荐用Appstore++，疑似已失效)
+
+以DowngradeApp为例，进入DowngradeApp后点击 开发者 
+将其降级方式改为bilin.eu.org(或者默认的手动输入不改也行）
+![963289E6-A023-459A-99E9-2A7DCD9FDDF4](https://github.com/user-attachments/assets/13052c6d-c831-4ecf-930c-971560adb08b)
+回到应用列表找到Phigros，点击后选择1.4.3版本降级（有时会显示两个1.4.3，选择下面那个即可）（若上一步默认的手动输入，输入836006848即可）
+![1DFA97CC-F913-4010-82AB-72C832BF4717](https://github.com/user-attachments/assets/c518c1a1-8428-4759-a205-e9c0e9b6f5b3)
+![47B6B8A7-D635-4941-AD30-E5F49D911C64](https://github.com/user-attachments/assets/f16caa33-ab81-49b3-b8fe-6eb417304448)
+* 方法三（越狱可用）
+使用netskao的AppData插件进行App降级
+![810D1ECE-4914-4AAB-AFE0-3F3E12F4257A](https://github.com/user-attachments/assets/8ecfac06-a83f-45e1-b42a-a40bb86e3770)
+
+##1.5刷取data，购买头像
+
+降级有商店的版本之后，我们需要有足够的data来购买头像(约64MB)
+在1.4.3版本，增加了通关新手教学(880000分及以上)会给予32MBdata的行为，且该版本有一个bug，即你打了多少遍新手教程，就能获得多少次32MB的data
+![777DDE3C-3D85-46EF-A5F9-434C6C4FAE4D](https://github.com/user-attachments/assets/386f0434-a684-4ad1-8577-ebe7fa61bdb1)
+初次进入1.4.3版本时，游戏会直接判定你为新用户，让你进行新手教程，不要惊慌，你的高版本数据并没有丢失或受到影响，因为Phigros在高版本某次更新中加密了存档结构，所以导致旧版本无法识别。">
+<meta property="og:title" content="保姆级iOS端降级获取商店绝版头像教程">
+<meta property="og:description" content="本教程详细教学了如何备份降级Phigros以及获取旧版商店头像方法，涉及到的一切文件均会在文末提供相关链接
+
+在查看教程前，请先确保：
+1.你有一台iPhone/iPad(本教程使用iPad mini4-iPadOS15.7.1)
+2.上述设备已越狱或安装巨魔或你掌握自签技术(即拥有证书及签名工具)
+3.上述设备上安装了Phigros(制作教程时最新版为3.9.1)
+
+##0.5备份数据(该教程失败率较低，对自己操作自信的可忽略）
+
+* 方法一：Phi自带的TapTap云存档备份
+* 方法二：越狱或巨魔使用Apps manager备份
+* 方法三：使用爱思助手连接设备备份
+![378C3DA3-AAA2-4F06-BB8A-302369608E83](https://github.com/user-attachments/assets/f7a4302e-4ff8-4930-889a-cb6cd5b24948)
+![5FB92118-B0F2-4C93-8826-1A519BA674D2](https://github.com/user-attachments/assets/a90fceff-cc81-448d-b014-2f54136c0572)
+
+##1.0降级Phigros(将Phigros降级到1.4.3版本)
+
+我会在文末提供Phigros1.4.3.ipa及其他文件，至于为什么非得是1.4.3呢，会在1.5步中解释
+
+* 方法一（需要设备上已经有自签软件及证书或电脑来使用自签软件）
+
+首先我们需要卸载新版Phigros，防止安装旧版Phigros时出现冲突
+打开 设置 点击通用/iPad(iPhone)存储空间
+![FAA12E2E-548F-4812-8ED3-AA5154694DD8](https://github.com/user-attachments/assets/ee67938c-30ab-404e-b40a-7578ca4ce037)
+然后等待应用列表加载(可能会花费较长时间，请耐心等待)，找到Phigros，点击它，然后点击“卸载App”，注意⚠️！是“卸载App”不是“删除App”！
+![084D3EA9-C893-4252-AA7B-98F098E9D3F9](https://github.com/user-attachments/assets/ee160e93-b03e-4996-9ae6-4a88c3e9ff2f)
+![94447B79-4F8A-4DA7-83D7-3BFAB2E527B1](https://github.com/user-attachments/assets/b287d8b6-b32b-49ca-9052-963adb1ec6bb)
+卸载完毕之后打开你所使用的签名软件(建议用爱思助手(pc)，轻松签(iOS))
+爱思助手安装ipa可自行查询，较为简单
+以轻松签为例，导入Phigros1.4.3.ipa，签名进行安装（证书问题自行解决）请确保ipa签名安装时的应用标识符(Bundle Identifier)为games.Pigeon.Phigros！
+![45A28CA7-E3BE-424B-B4DB-E15448E36AF7](https://github.com/user-attachments/assets/ebbbaba8-33f1-42c9-a930-561675b04c48)
+* 方法二（巨魔用户可用）
+
+A方案.
+使用Trollstore覆盖安装Phigros1.4.3(前提即为标识符相同)
+![9A1A6C61-F0E4-434D-A6C4-4B1FB9BAD49D](https://github.com/user-attachments/assets/bbf56f52-f748-4e50-b934-07a9cb55fe89)
+选择Force Installation(覆盖安装)
+![B4691A59-A879-46B4-957E-994F843885E7](https://github.com/user-attachments/assets/08538140-3449-46c9-8c28-d2dd1290cb36)
+B方案.
+使用Trollstore安装netskao的DowngradeApp(不推荐用Appstore++，疑似已失效)
+
+以DowngradeApp为例，进入DowngradeApp后点击 开发者 
+将其降级方式改为bilin.eu.org(或者默认的手动输入不改也行）
+![963289E6-A023-459A-99E9-2A7DCD9FDDF4](https://github.com/user-attachments/assets/13052c6d-c831-4ecf-930c-971560adb08b)
+回到应用列表找到Phigros，点击后选择1.4.3版本降级（有时会显示两个1.4.3，选择下面那个即可）（若上一步默认的手动输入，输入836006848即可）
+![1DFA97CC-F913-4010-82AB-72C832BF4717](https://github.com/user-attachments/assets/c518c1a1-8428-4759-a205-e9c0e9b6f5b3)
+![47B6B8A7-D635-4941-AD30-E5F49D911C64](https://github.com/user-attachments/assets/f16caa33-ab81-49b3-b8fe-6eb417304448)
+* 方法三（越狱可用）
+使用netskao的AppData插件进行App降级
+![810D1ECE-4914-4AAB-AFE0-3F3E12F4257A](https://github.com/user-attachments/assets/8ecfac06-a83f-45e1-b42a-a40bb86e3770)
+
+##1.5刷取data，购买头像
+
+降级有商店的版本之后，我们需要有足够的data来购买头像(约64MB)
+在1.4.3版本，增加了通关新手教学(880000分及以上)会给予32MBdata的行为，且该版本有一个bug，即你打了多少遍新手教程，就能获得多少次32MB的data
+![777DDE3C-3D85-46EF-A5F9-434C6C4FAE4D](https://github.com/user-attachments/assets/386f0434-a684-4ad1-8577-ebe7fa61bdb1)
+初次进入1.4.3版本时，游戏会直接判定你为新用户，让你进行新手教程，不要惊慌，你的高版本数据并没有丢失或受到影响，因为Phigros在高版本某次更新中加密了存档结构，所以导致旧版本无法识别。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://blog.suisei.top/post/bao-mu-ji-iOS-duan-jiang-ji-huo-qu-shang-dian-jue-ban-tou-xiang-jiao-cheng.html">
+<meta property="og:image" content="https://github.com/ByTheLunar/Lunar.github.io/blob/main/static/images/avatar.jpg">
+<title>保姆级iOS端降级获取商店绝版头像教程</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">保姆级iOS端降级获取商店绝版头像教程</h1>
+<div class="title-right">
+    <a href="https://blog.suisei.top" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/ByTheLunar/Lunar.github.io/issues/5" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><p>本教程详细教学了如何备份降级Phigros以及获取旧版商店头像方法，涉及到的一切文件均会在文末提供相关链接</p>
+<p>在查看教程前，请先确保：<br>
+1.你有一台iPhone/iPad(本教程使用iPad mini4-iPadOS15.7.1)<br>
+2.上述设备已越狱或安装巨魔或你掌握自签技术(即拥有证书及签名工具)<br>
+3.上述设备上安装了Phigros(制作教程时最新版为3.9.1)</p>
+<p>##0.5备份数据(该教程失败率较低，对自己操作自信的可忽略）</p>
+<ul>
+<li>方法一：Phi自带的TapTap云存档备份</li>
+<li>方法二：越狱或巨魔使用Apps manager备份</li>
+<li>方法三：使用爱思助手连接设备备份<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/f7a4302e-4ff8-4930-889a-cb6cd5b24948"><img src="https://github.com/user-attachments/assets/f7a4302e-4ff8-4930-889a-cb6cd5b24948" alt="378C3DA3-AAA2-4F06-BB8A-302369608E83" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/a90fceff-cc81-448d-b014-2f54136c0572"><img src="https://github.com/user-attachments/assets/a90fceff-cc81-448d-b014-2f54136c0572" alt="5FB92118-B0F2-4C93-8826-1A519BA674D2" style="max-width: 100%;"></a></li>
+</ul>
+<p>##1.0降级Phigros(将Phigros降级到1.4.3版本)</p>
+<p>我会在文末提供Phigros1.4.3.ipa及其他文件，至于为什么非得是1.4.3呢，会在1.5步中解释</p>
+<ul>
+<li>方法一（需要设备上已经有自签软件及证书或电脑来使用自签软件）</li>
+</ul>
+<p>首先我们需要卸载新版Phigros，防止安装旧版Phigros时出现冲突<br>
+打开 设置 点击通用/iPad(iPhone)存储空间<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/ee67938c-30ab-404e-b40a-7578ca4ce037"><img src="https://github.com/user-attachments/assets/ee67938c-30ab-404e-b40a-7578ca4ce037" alt="FAA12E2E-548F-4812-8ED3-AA5154694DD8" style="max-width: 100%;"></a><br>
+然后等待应用列表加载(可能会花费较长时间，请耐心等待)，找到Phigros，点击它，然后点击“卸载App”，注意<g-emoji class="g-emoji" alias="warning">⚠️</g-emoji>！是“卸载App”不是“删除App”！<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/ee160e93-b03e-4996-9ae6-4a88c3e9ff2f"><img src="https://github.com/user-attachments/assets/ee160e93-b03e-4996-9ae6-4a88c3e9ff2f" alt="084D3EA9-C893-4252-AA7B-98F098E9D3F9" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/b287d8b6-b32b-49ca-9052-963adb1ec6bb"><img src="https://github.com/user-attachments/assets/b287d8b6-b32b-49ca-9052-963adb1ec6bb" alt="94447B79-4F8A-4DA7-83D7-3BFAB2E527B1" style="max-width: 100%;"></a><br>
+卸载完毕之后打开你所使用的签名软件(建议用爱思助手(pc)，轻松签(iOS))<br>
+爱思助手安装ipa可自行查询，较为简单<br>
+以轻松签为例，导入Phigros1.4.3.ipa，签名进行安装（证书问题自行解决）请确保ipa签名安装时的应用标识符(Bundle Identifier)为games.Pigeon.Phigros！<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/ebbbaba8-33f1-42c9-a930-561675b04c48"><img src="https://github.com/user-attachments/assets/ebbbaba8-33f1-42c9-a930-561675b04c48" alt="45A28CA7-E3BE-424B-B4DB-E15448E36AF7" style="max-width: 100%;"></a></p>
+<ul>
+<li>方法二（巨魔用户可用）</li>
+</ul>
+<p>A方案.<br>
+使用Trollstore覆盖安装Phigros1.4.3(前提即为标识符相同)<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/bbf56f52-f748-4e50-b934-07a9cb55fe89"><img src="https://github.com/user-attachments/assets/bbf56f52-f748-4e50-b934-07a9cb55fe89" alt="9A1A6C61-F0E4-434D-A6C4-4B1FB9BAD49D" style="max-width: 100%;"></a><br>
+选择Force Installation(覆盖安装)<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/08538140-3449-46c9-8c28-d2dd1290cb36"><img src="https://github.com/user-attachments/assets/08538140-3449-46c9-8c28-d2dd1290cb36" alt="B4691A59-A879-46B4-957E-994F843885E7" style="max-width: 100%;"></a><br>
+B方案.<br>
+使用Trollstore安装netskao的DowngradeApp(不推荐用Appstore++，疑似已失效)</p>
+<p>以DowngradeApp为例，进入DowngradeApp后点击 开发者<br>
+将其降级方式改为bilin.eu.org(或者默认的手动输入不改也行）<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/13052c6d-c831-4ecf-930c-971560adb08b"><img src="https://github.com/user-attachments/assets/13052c6d-c831-4ecf-930c-971560adb08b" alt="963289E6-A023-459A-99E9-2A7DCD9FDDF4" style="max-width: 100%;"></a><br>
+回到应用列表找到Phigros，点击后选择1.4.3版本降级（有时会显示两个1.4.3，选择下面那个即可）（若上一步默认的手动输入，输入836006848即可）<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/c518c1a1-8428-4759-a205-e9c0e9b6f5b3"><img src="https://github.com/user-attachments/assets/c518c1a1-8428-4759-a205-e9c0e9b6f5b3" alt="1DFA97CC-F913-4010-82AB-72C832BF4717" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/f16caa33-ab81-49b3-b8fe-6eb417304448"><img src="https://github.com/user-attachments/assets/f16caa33-ab81-49b3-b8fe-6eb417304448" alt="47B6B8A7-D635-4941-AD30-E5F49D911C64" style="max-width: 100%;"></a></p>
+<ul>
+<li>方法三（越狱可用）<br>
+使用netskao的AppData插件进行App降级<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/8ecfac06-a83f-45e1-b42a-a40bb86e3770"><img src="https://github.com/user-attachments/assets/8ecfac06-a83f-45e1-b42a-a40bb86e3770" alt="810D1ECE-4914-4AAB-AFE0-3F3E12F4257A" style="max-width: 100%;"></a></li>
+</ul>
+<p>##1.5刷取data，购买头像</p>
+<p>降级有商店的版本之后，我们需要有足够的data来购买头像(约64MB)<br>
+在1.4.3版本，增加了通关新手教学(880000分及以上)会给予32MBdata的行为，且该版本有一个bug，即你打了多少遍新手教程，就能获得多少次32MB的data<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/386f0434-a684-4ad1-8577-ebe7fa61bdb1"><img src="https://github.com/user-attachments/assets/386f0434-a684-4ad1-8577-ebe7fa61bdb1" alt="777DDE3C-3D85-46EF-A5F9-434C6C4FAE4D" style="max-width: 100%;"></a><br>
+初次进入1.4.3版本时，游戏会直接判定你为新用户，让你进行新手教程，不要惊慌，你的高版本数据并没有丢失或受到影响，因为Phigros在高版本某次更新中加密了存档结构，所以导致旧版本无法识别。<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/ca5c2e12-a8d3-43e7-91e9-40f107726004"><img src="https://github.com/user-attachments/assets/ca5c2e12-a8d3-43e7-91e9-40f107726004" alt="935BD92A-5431-48A7-B49A-45EB668A2CF3" style="max-width: 100%;"></a><br>
+这时我们只需要正常地打一遍新手教程，然后再打一遍新手教程，来获得我们购买商店头像的资金（每次新手教程需要超过880000分）<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/0fd5ae3d-a3b3-4847-ab7e-76836cacbc1a"><img src="https://github.com/user-attachments/assets/0fd5ae3d-a3b3-4847-ab7e-76836cacbc1a" alt="1E6542CB-FD28-4F6E-A85B-A64A42C44205" style="max-width: 100%;"></a><br>
+获取完足够的data之后，来到游戏主界面，点击左上角线索栏，然后在线索界面点击右上角的商店栏，即可进入商店，购买头像<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/f93d5ee7-6a27-45ae-87a4-ee78651aee80"><img src="https://github.com/user-attachments/assets/f93d5ee7-6a27-45ae-87a4-ee78651aee80" alt="CA7565B2-B3D5-4E9D-BB35-46DB0FBB7E07" style="max-width: 100%;"></a><br>
+(Phigros从1.4.3到最后一个带有商店的版本1.6.12之间，没有在商店增加任何新头像，所以无需担心没有购买到全部的商店头像</p>
+<p>##2.0升回高版本，查看成果</p>
+<p>当你购买完全部的商店头像，即可将Phigros升级回高版本</p>
+<p>假如你在之前降级时候采取的是巨魔覆盖安装或DowngradeApp或者越狱使用AppData降级<br>
+那么你可以直接打开AppStore，搜索Phigros，点击更新<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/d36c6e3b-a725-485d-a9ee-176000574a72"><img src="https://github.com/user-attachments/assets/d36c6e3b-a725-485d-a9ee-176000574a72" alt="4A893176-6B5C-48F3-B8FF-B6C73E75AE11" style="max-width: 100%;"></a><br>
+假如你之前降级时使用的是自签类的方法<br>
+你或许还需要使用自签之前的卸载Phigros方法(注意不是删除)，来解除安装冲突，然后进入AppStore，搜索Phigros，点击下载(或☁️图标)<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/4d1b1897-957a-4e99-b8b3-45b11720a7d3"><img src="https://github.com/user-attachments/assets/4d1b1897-957a-4e99-b8b3-45b11720a7d3" alt="405CFE66-8970-4A64-BAA4-1E7D536C7658" style="max-width: 100%;"></a></p>
+<p>等待更新完成，进入游戏，就能前往个人页面查看自己获得的商店头像啦，而且存档没有出现任何问题！<br>
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/6ccdead6-f402-4aeb-b3b8-1f850576257d"><img src="https://github.com/user-attachments/assets/6ccdead6-f402-4aeb-b3b8-1f850576257d" alt="511906A4-CADA-482C-A474-D715E8297877" style="max-width: 100%;"></a></p>
+<p>##相关文件及链接<br>
+Phigros1.4.3.ipa(标识符需自行修改):<a href="https://pan.baidu.com/s/1Sn-0Ieu-jnryfaX4ND_GPg" rel="nofollow">https://pan.baidu.com/s/1Sn-0Ieu-jnryfaX4ND_GPg</a> 提取码：1234</p>
+<p>DowngradeApp(netskao).tipa:<a href="https://pan.baidu.com/s/14wTi_0vjbTg_1qe9EM-ZEA" rel="nofollow">https://pan.baidu.com/s/14wTi_0vjbTg_1qe9EM-ZEA</a> 提取码：1234</p>
+<p>AppData(netskao).deb:<a href="https://pan.baidu.com/s/1-iJ-PMUMHkro3ozGNxQUww" rel="nofollow">https://pan.baidu.com/s/1-iJ-PMUMHkro3ozGNxQUww</a> 提取码：1234</p>
+<p>netskao频道:<a href="https://t.me/IPAPatch" rel="nofollow">https://t.me/IPAPatch</a></p>
+<p>netskao越狱插件源:<a href="https://jailrepo.initnil.com/" rel="nofollow">https://jailrepo.initnil.com/</a></p>
+<p>AppsManager越狱插件源:<a href="http://apt.thebigboss.org/repofiles/cydia/dists/stable" rel="nofollow">http://apt.thebigboss.org/repofiles/cydia/dists/stable</a></p>
+<p>轻松签:<a href="https://esign.yyyue.xyz/index.html" rel="nofollow">https://esign.yyyue.xyz/index.html</a></p>
+<p>爱思助手:<a href="https://m.i4.cn/" rel="nofollow">www.i4.cn</a></p></div>
+<div style="font-size:small;margin-top:8px;float:right;">Have a nice day</div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://blog.suisei.top">九尾の白狐☆Lunar
+创建于2024年8月7日凌晨3点15分</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if("08/07/2024"!=""){
+    var startSite=new Date("08/07/2024");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","ByTheLunar/Lunar.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+
+
+</script>
+<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/lightbox.js'></script>
+
+</html>

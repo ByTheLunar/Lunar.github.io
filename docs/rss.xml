@@ -3,9 +3,65 @@
 创建于2024年8月7日凌晨3点15分</title><link>https://blog.suisei.top</link><description>☝️🤓🖕正如你所见,妈的头像无法显示的这个bug我修了两周都没修好,还有妈的我他妈登进不去Cloudflare(红温).
       哦对,白狐开学了,这一周都不会上线了qwq
       窝补药去上学呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜(妈的简介为什么不支持换行符啊）</description><copyright>九尾の白狐☆Lunar
-创建于2024年8月7日凌晨3点15分</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/ByTheLunar/Lunar.github.io/blob/main/static/images/avatar.jpg</url><title>avatar</title><link>https://blog.suisei.top</link></image><lastBuildDate>Fri, 30 Aug 2024 18:59:48 +0000</lastBuildDate><managingEditor>九尾の白狐☆Lunar
+创建于2024年8月7日凌晨3点15分</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/ByTheLunar/Lunar.github.io/blob/main/static/images/avatar.jpg</url><title>avatar</title><link>https://blog.suisei.top</link></image><lastBuildDate>Mon, 16 Sep 2024 11:30:59 +0000</lastBuildDate><managingEditor>九尾の白狐☆Lunar
 创建于2024年8月7日凌晨3点15分</managingEditor><ttl>60</ttl><webMaster>九尾の白狐☆Lunar
-创建于2024年8月7日凌晨3点15分</webMaster><item><title>人会死，但我的博客在GitHub中会万岁———转载</title><link>https://blog.suisei.top/post/ren-hui-si-%EF%BC%8C-dan-wo-de-bo-ke-zai-GitHub-zhong-hui-wan-sui-%E2%80%94%E2%80%94%E2%80%94-zhuan-zai.html</link><description>&gt; ### 转载自Gmeek作者博客&#13;
+创建于2024年8月7日凌晨3点15分</webMaster><item><title>保姆级iOS端降级获取商店绝版头像教程</title><link>https://blog.suisei.top/post/bao-mu-ji-iOS-duan-jiang-ji-huo-qu-shang-dian-jue-ban-tou-xiang-jiao-cheng.html</link><description>本教程详细教学了如何备份降级Phigros以及获取旧版商店头像方法，涉及到的一切文件均会在文末提供相关链接&#13;
+&#13;
+在查看教程前，请先确保：&#13;
+1.你有一台iPhone/iPad(本教程使用iPad mini4-iPadOS15.7.1)&#13;
+2.上述设备已越狱或安装巨魔或你掌握自签技术(即拥有证书及签名工具)&#13;
+3.上述设备上安装了Phigros(制作教程时最新版为3.9.1)&#13;
+&#13;
+##0.5备份数据(该教程失败率较低，对自己操作自信的可忽略）&#13;
+&#13;
+* 方法一：Phi自带的TapTap云存档备份&#13;
+* 方法二：越狱或巨魔使用Apps manager备份&#13;
+* 方法三：使用爱思助手连接设备备份&#13;
+![378C3DA3-AAA2-4F06-BB8A-302369608E83](https://github.com/user-attachments/assets/f7a4302e-4ff8-4930-889a-cb6cd5b24948)&#13;
+![5FB92118-B0F2-4C93-8826-1A519BA674D2](https://github.com/user-attachments/assets/a90fceff-cc81-448d-b014-2f54136c0572)&#13;
+&#13;
+##1.0降级Phigros(将Phigros降级到1.4.3版本)&#13;
+&#13;
+我会在文末提供Phigros1.4.3.ipa及其他文件，至于为什么非得是1.4.3呢，会在1.5步中解释&#13;
+&#13;
+* 方法一（需要设备上已经有自签软件及证书或电脑来使用自签软件）&#13;
+&#13;
+首先我们需要卸载新版Phigros，防止安装旧版Phigros时出现冲突&#13;
+打开 设置 点击通用/iPad(iPhone)存储空间&#13;
+![FAA12E2E-548F-4812-8ED3-AA5154694DD8](https://github.com/user-attachments/assets/ee67938c-30ab-404e-b40a-7578ca4ce037)&#13;
+然后等待应用列表加载(可能会花费较长时间，请耐心等待)，找到Phigros，点击它，然后点击“卸载App”，注意⚠️！是“卸载App”不是“删除App”！&#13;
+![084D3EA9-C893-4252-AA7B-98F098E9D3F9](https://github.com/user-attachments/assets/ee160e93-b03e-4996-9ae6-4a88c3e9ff2f)&#13;
+![94447B79-4F8A-4DA7-83D7-3BFAB2E527B1](https://github.com/user-attachments/assets/b287d8b6-b32b-49ca-9052-963adb1ec6bb)&#13;
+卸载完毕之后打开你所使用的签名软件(建议用爱思助手(pc)，轻松签(iOS))&#13;
+爱思助手安装ipa可自行查询，较为简单&#13;
+以轻松签为例，导入Phigros1.4.3.ipa，签名进行安装（证书问题自行解决）请确保ipa签名安装时的应用标识符(Bundle Identifier)为games.Pigeon.Phigros！&#13;
+![45A28CA7-E3BE-424B-B4DB-E15448E36AF7](https://github.com/user-attachments/assets/ebbbaba8-33f1-42c9-a930-561675b04c48)&#13;
+* 方法二（巨魔用户可用）&#13;
+&#13;
+A方案.&#13;
+使用Trollstore覆盖安装Phigros1.4.3(前提即为标识符相同)&#13;
+![9A1A6C61-F0E4-434D-A6C4-4B1FB9BAD49D](https://github.com/user-attachments/assets/bbf56f52-f748-4e50-b934-07a9cb55fe89)&#13;
+选择Force Installation(覆盖安装)&#13;
+![B4691A59-A879-46B4-957E-994F843885E7](https://github.com/user-attachments/assets/08538140-3449-46c9-8c28-d2dd1290cb36)&#13;
+B方案.&#13;
+使用Trollstore安装netskao的DowngradeApp(不推荐用Appstore++，疑似已失效)&#13;
+&#13;
+以DowngradeApp为例，进入DowngradeApp后点击 开发者 &#13;
+将其降级方式改为bilin.eu.org(或者默认的手动输入不改也行）&#13;
+![963289E6-A023-459A-99E9-2A7DCD9FDDF4](https://github.com/user-attachments/assets/13052c6d-c831-4ecf-930c-971560adb08b)&#13;
+回到应用列表找到Phigros，点击后选择1.4.3版本降级（有时会显示两个1.4.3，选择下面那个即可）（若上一步默认的手动输入，输入836006848即可）&#13;
+![1DFA97CC-F913-4010-82AB-72C832BF4717](https://github.com/user-attachments/assets/c518c1a1-8428-4759-a205-e9c0e9b6f5b3)&#13;
+![47B6B8A7-D635-4941-AD30-E5F49D911C64](https://github.com/user-attachments/assets/f16caa33-ab81-49b3-b8fe-6eb417304448)&#13;
+* 方法三（越狱可用）&#13;
+使用netskao的AppData插件进行App降级&#13;
+![810D1ECE-4914-4AAB-AFE0-3F3E12F4257A](https://github.com/user-attachments/assets/8ecfac06-a83f-45e1-b42a-a40bb86e3770)&#13;
+&#13;
+##1.5刷取data，购买头像&#13;
+&#13;
+降级有商店的版本之后，我们需要有足够的data来购买头像(约64MB)&#13;
+在1.4.3版本，增加了通关新手教学(880000分及以上)会给予32MBdata的行为，且该版本有一个bug，即你打了多少遍新手教程，就能获得多少次32MB的data&#13;
+![777DDE3C-3D85-46EF-A5F9-434C6C4FAE4D](https://github.com/user-attachments/assets/386f0434-a684-4ad1-8577-ebe7fa61bdb1)&#13;
+初次进入1.4.3版本时，游戏会直接判定你为新用户，让你进行新手教程，不要惊慌，你的高版本数据并没有丢失或受到影响，因为Phigros在高版本某次更新中加密了存档结构，所以导致旧版本无法识别。</description><guid isPermaLink="true">https://blog.suisei.top/post/bao-mu-ji-iOS-duan-jiang-ji-huo-qu-shang-dian-jue-ban-tou-xiang-jiao-cheng.html</guid><pubDate>Mon, 16 Sep 2024 11:30:37 +0000</pubDate></item><item><title>人会死，但我的博客在GitHub中会万岁———转载</title><link>https://blog.suisei.top/post/ren-hui-si-%EF%BC%8C-dan-wo-de-bo-ke-zai-GitHub-zhong-hui-wan-sui-%E2%80%94%E2%80%94%E2%80%94-zhuan-zai.html</link><description>&gt; ### 转载自Gmeek作者博客&#13;
 &gt; https://blog.meekdai.com/post/ren-hui-si-，-dan-wo-de-bo-ke-zai-GitHub-zhong-hui-wan-sui.html&#13;
 &gt;&#13;
 &gt; 当人类面对时间的无情流逝，我们总是渴望留下一些痕迹，一些思想，一些记忆。</description><guid isPermaLink="true">https://blog.suisei.top/post/ren-hui-si-%EF%BC%8C-dan-wo-de-bo-ke-zai-GitHub-zhong-hui-wan-sui-%E2%80%94%E2%80%94%E2%80%94-zhuan-zai.html</guid><pubDate>Thu, 08 Aug 2024 19:36:24 +0000</pubDate></item><item><title>这是文章标题</title><link>https://blog.suisei.top/post/zhe-shi-wen-zhang-biao-ti.html</link><description>这个是文章内容&#13;
