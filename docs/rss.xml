@@ -3,16 +3,16 @@
 创建于2024年8月7日凌晨3点15分</title><link>https://blog.suisei.top</link><description>☝️🤓🖕正如你所见,妈的头像无法显示的这个bug我修了两周都没修好,还有妈的我他妈登进不去Cloudflare(红温).
       哦对,白狐开学了,这一周都不会上线了qwq
       窝补药去上学呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜(妈的简介为什么不支持换行符啊）</description><copyright>九尾の白狐☆Lunar
-创建于2024年8月7日凌晨3点15分</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/ByTheLunar/Lunar.github.io/blob/main/static/images/avatar.jpg</url><title>avatar</title><link>https://blog.suisei.top</link></image><lastBuildDate>Mon, 16 Sep 2024 11:30:59 +0000</lastBuildDate><managingEditor>九尾の白狐☆Lunar
+创建于2024年8月7日凌晨3点15分</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.com/ByTheLunar/Lunar.github.io/blob/main/static/images/avatar.jpg</url><title>avatar</title><link>https://blog.suisei.top</link></image><lastBuildDate>Mon, 16 Sep 2024 11:36:17 +0000</lastBuildDate><managingEditor>九尾の白狐☆Lunar
 创建于2024年8月7日凌晨3点15分</managingEditor><ttl>60</ttl><webMaster>九尾の白狐☆Lunar
-创建于2024年8月7日凌晨3点15分</webMaster><item><title>保姆级iOS端降级获取商店绝版头像教程</title><link>https://blog.suisei.top/post/bao-mu-ji-iOS-duan-jiang-ji-huo-qu-shang-dian-jue-ban-tou-xiang-jiao-cheng.html</link><description>本教程详细教学了如何备份降级Phigros以及获取旧版商店头像方法，涉及到的一切文件均会在文末提供相关链接&#13;
+创建于2024年8月7日凌晨3点15分</webMaster><item><title>保姆级iOS端降级获取商店绝版头像教程</title><link>https://blog.suisei.top/post/bao-mu-ji-iOS-duan-jiang-ji-huo-qu-shang-dian-jue-ban-tou-xiang-jiao-cheng.html</link><description>**本教程详细教学了如何备份降级Phigros以及获取旧版商店头像方法，涉及到的一切文件均会在文末提供相关链接**&#13;
 &#13;
 在查看教程前，请先确保：&#13;
 1.你有一台iPhone/iPad(本教程使用iPad mini4-iPadOS15.7.1)&#13;
 2.上述设备已越狱或安装巨魔或你掌握自签技术(即拥有证书及签名工具)&#13;
 3.上述设备上安装了Phigros(制作教程时最新版为3.9.1)&#13;
 &#13;
-##0.5备份数据(该教程失败率较低，对自己操作自信的可忽略）&#13;
+### 0.5备份数据(该教程失败率较低，对自己操作自信的可忽略）&#13;
 &#13;
 * 方法一：Phi自带的TapTap云存档备份&#13;
 * 方法二：越狱或巨魔使用Apps manager备份&#13;
@@ -20,7 +20,7 @@
 ![378C3DA3-AAA2-4F06-BB8A-302369608E83](https://github.com/user-attachments/assets/f7a4302e-4ff8-4930-889a-cb6cd5b24948)&#13;
 ![5FB92118-B0F2-4C93-8826-1A519BA674D2](https://github.com/user-attachments/assets/a90fceff-cc81-448d-b014-2f54136c0572)&#13;
 &#13;
-##1.0降级Phigros(将Phigros降级到1.4.3版本)&#13;
+### 1.0降级Phigros(将Phigros降级到1.4.3版本)**&#13;
 &#13;
 我会在文末提供Phigros1.4.3.ipa及其他文件，至于为什么非得是1.4.3呢，会在1.5步中解释&#13;
 &#13;
@@ -56,7 +56,7 @@ B方案.&#13;
 使用netskao的AppData插件进行App降级&#13;
 ![810D1ECE-4914-4AAB-AFE0-3F3E12F4257A](https://github.com/user-attachments/assets/8ecfac06-a83f-45e1-b42a-a40bb86e3770)&#13;
 &#13;
-##1.5刷取data，购买头像&#13;
+### 1.5刷取data，购买头像&#13;
 &#13;
 降级有商店的版本之后，我们需要有足够的data来购买头像(约64MB)&#13;
 在1.4.3版本，增加了通关新手教学(880000分及以上)会给予32MBdata的行为，且该版本有一个bug，即你打了多少遍新手教程，就能获得多少次32MB的data&#13;
