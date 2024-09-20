@@ -13,7 +13,7 @@
 ![378C3DA3-AAA2-4F06-BB8A-302369608E83](https://github.com/user-attachments/assets/f7a4302e-4ff8-4930-889a-cb6cd5b24948)
 ![5FB92118-B0F2-4C93-8826-1A519BA674D2](https://github.com/user-attachments/assets/a90fceff-cc81-448d-b014-2f54136c0572)
 
-### 1.0降级Phigros(将Phigros降级到1.4.3版本)**
+### 1.0降级Phigros(将Phigros降级到1.4.3版本)
 
 我会在文末提供Phigros1.4.3.ipa及其他文件，至于为什么非得是1.4.3呢，会在1.5步中解释
 
